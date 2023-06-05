@@ -15,6 +15,9 @@ setTimeout(() => {
       </ABtn>
       <AAlert>
         This is alert!
+        <AConfig :props="{ ABtn: { icon } }">
+          <ABtn>Configured!</ABtn>
+        </AConfig>
       </AAlert>
     </ACard>
   </main>

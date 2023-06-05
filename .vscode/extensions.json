@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "mgmcdermott.vscode-language-babel",
+        "dbaeumer.vscode-eslint",
+        "antfu.goto-alias",
+        "anteprimorac.html-end-tag-labels",
+        "antfu.iconify",
+        "xabikos.javascriptsnippets",
+        "yoavbls.pretty-ts-errors",
+        "antfu.smart-clicks",
+        "meganrogge.template-string-converter",
+        "johnsoncodehk.vscode-tsconfig-helper",
+        "antfu.unocss",
+        "orta.vscode-twoslash-queries",
+        "vue.volar"
+    ]
+}
