@@ -9,10 +9,14 @@ defineOptions({
 })
 
 const defaults = inject(ANU_DEFAULTS)
+
+if (!defaults)
+  throw new Error('Unable to find defaults. Please make sure to install the plugin before using `useDefaults` composable.')
+
 watch(
   () => props.props,
   () => {
-    provide(ANU_DEFAULTS, mergePropsDefaults(defaults, props.props))
+    defaults.value = mergePropsDefaults(defaults.value, props.props)
   },
   { immediate: true },
 )

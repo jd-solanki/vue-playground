@@ -36,7 +36,7 @@ const configDefaults: PluginOptions = {
 
 export const plugin = {
   install(app: App, options: PartialDeep<PluginOptions> = {}) {
-    const config = defu(options, configDefaults)
+    const config: PluginOptions = defu(options, configDefaults)
 
     for (const prop in components) {
       // @ts-expect-error: I want to index import using string
@@ -44,6 +44,6 @@ export const plugin = {
       app.component(component.name, component)
     }
 
-    app.provide(ANU_DEFAULTS, config.defaults)
+    app.provide(ANU_DEFAULTS, ref(config.defaults))
   },
 }
