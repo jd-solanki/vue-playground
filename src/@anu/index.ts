@@ -44,7 +44,6 @@ export const plugin = {
       app.component(component.name, component)
     }
 
-    console.log('config.defaults :>> ', config.defaults)
     app.provide(ANU_DEFAULTS, config.defaults)
   },
 }

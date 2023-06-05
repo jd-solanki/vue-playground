@@ -9,7 +9,6 @@ defineOptions({
 })
 
 const { props, defaultsClass, defaultsStyle, defaultsAttrs } = useDefaults(_props)
-console.log('props :>> ', props)
 </script>
 
 <template>
